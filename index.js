@@ -38,13 +38,13 @@ const addNewNote=(text = '')=>{
     const mainDiv =note.querySelector('.main');
     const textArea =note.querySelector('textarea');
 
-    //delete the node.
+
     delButton.addEventListener('click',()=>{
         note.remove();
         updateLSData();
     })
 
-    // toggle using edit button
+  
 
 
     textArea.value=text;
@@ -74,7 +74,6 @@ const addNewNote=(text = '')=>{
 
 }
 
-//getting the data back from localstorage
 
 const notes=JSON.parse(localStorage.getItem('notes'));
 
